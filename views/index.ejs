@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Chat App <span><i class="fa-regular fa-message"></i></span></h1>
+    <div class="main">
+        <div class="name">
+            <span><i class="fa-solid fa-user"></i></span>
+            <input type="text" value="Anonymous" class="inp-name">
+        </div>
+        <ul class="message-container">
+            <li class="message-left">
+                <p class="message">
+                    Lorem ipsum dolor
+                    <span>bluebird</span>
+                </p>
+            </li>
+
+            <li class="message-right">
+                <p class="message">
+                    Lorem ipsum dolor
+                    <span>bluebird</span>
+                </p>
+            </li>
+
+           
+        </ul>
+        <form class="message-form">
+            <input type="text" name="message" class="message-inp">
+            <div class="divider"></div>
+            <button type="submit" class="btn">Send
+                <span><i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+        </form>
+    </div>
+    <h3 class="client-total">Total people</h3>
+    <script src="/socket.io/socket.io.js"></script>
+<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
+        integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
